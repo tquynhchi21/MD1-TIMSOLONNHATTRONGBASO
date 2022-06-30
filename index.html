@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="soNguyen1" type="text"> <br>
+<input id="soNguyen2" type="text"><br>
+<input id="soNguyen3" type="text"> <br>
+<button onclick="check()">checkk</button>
+<h3 id="soMax"></h3>
+
+<script>
+    function check() {
+        let a = +document.getElementById("soNguyen1").value;
+        let b = +document.getElementById("soNguyen2").value;
+        let c = +document.getElementById("soNguyen3").value;
+        if (a > b){
+            if (a > c){
+                document.getElementById("soMax").innerHTML = a +"lớn nhất"
+            }else{
+                document.getElementById("soMax").innerHTML = c + "lớn nhất"
+            }
+        }else {
+            if (b > c){
+                document.getElementById("soMax").innerHTML = b + "lớn nhất"}
+            else {
+                document.getElementById("soMax").innerHTML = c + " lớn nhất"
+            }
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
